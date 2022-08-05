@@ -1,0 +1,308 @@
+* { /* CSS RESET */
+ margin: 0;
+ padding: 0;
+ border: none;
+ text-decoration: none;
+}
+
+body {
+    background-color: #c6e6ad;
+    background-image: url(img/fundo.jpg);
+    background-repeat: repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    /* background-size: 300px 300px; */
+
+}
+
+header {
+    width: 960px;
+    height: 200px;
+    border: 2px solid #000;
+    background-color: rgba(15, 10, 10, 0.5);
+    background-image: url(img/html-css.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 960px 250px;
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* opacity: 0.5; */
+    /* margin: 10px 0 0 100px; */
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    from {background-image: url(img/html-css.webp);}
+    to {background-image: url(img/topo_2.webp);}
+}
+
+nav {
+    width: 960px;
+    height: 60px;
+    border: 2px solid #000;
+    background-color: rgba(118, 164, 189, 0.5);
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 5px 8px rgba(10, 10, 10, 0.7);
+}
+
+nav ul li { /* MENU CSS RESET */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul {
+    margin-left: 200px;
+}
+
+nav > ul > li {
+    /* display: inline; */
+    float: left;
+    margin-left: 30px;
+}
+
+nav > ul > li > a {
+    color: #000;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 60px;
+    padding: 15px;
+}
+
+nav > ul > li > a:hover {
+    color:#AAA;
+    background-color: rgb(225, 255, 245, 0.5);
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(118, 164, 189, 0.5);
+    transition: all, 0.5s;
+    /* border-bottom: 4px solid #FFF; */
+}
+
+nav .ativo {
+    color:#777;
+    border-bottom: 3px solid #000;
+    box-shadow: 3px 3px 2px rgba(18, 14, 19, 0.5);
+}
+
+nav > ul > li > a {
+    transition: all, 0.5s;
+}
+
+main {
+    width: 960px;
+    height: 600px;
+    /* border: 2px solid #000; */
+    background-color: rgb(225, 255, 245, 0.5);
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(10, 10, 10, 0.7);
+}
+
+aside {
+    float: left;
+    width: 200px;
+    height: 590px;
+    border: 1px solid #000;
+    background-color: #FFF;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+article {
+    float: right;
+    width: 740px;
+    height: 320px;
+    border: 1px solid #000;
+    background-color: #FFF;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+/* Inicio Estilo do Formulário -------------------- */
+
+#contato {
+    height: 590px;
+}
+
+#cad {
+    width: 710px;
+    height: 560px;
+}
+
+fieldset {
+    border: 2px outset #CCC; 
+    box-shadow: 2px 2px 4px rgba(10, 10, 10, 0.7);
+    width: 630px;
+    margin: 15px;
+    padding: 0 15px 0 15px;
+}
+
+legend {
+    text-align: left;
+    padding: 0 10px 0 10px;
+    color: #333;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+    color:#000;
+    font-weight: bolder;
+    font-size: 12pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* margin: 10px 0 10px 0;  
+    display: block; */
+    line-height: 40px;
+}
+
+label::before {
+    content: "*";
+    color: #F00;
+    font-size: 10px;
+    letter-spacing: -5px;
+}
+
+input {
+    width: 450px;
+    border-bottom: 2px solid #000;
+    outline: none;
+    height: 24px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 80px;
+    transition: width, .35s ease-in-out;
+}
+
+input:focus {
+    width: 460px;
+}
+
+select {
+    width: 200px;
+    border: 1px solid #000;
+    height: 24px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 333px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea {
+    width: 450px;
+    border: 1px solid #000;
+    height: 200px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    resize: none;
+}
+
+#btn {
+    width: 300px;
+    height: 0;
+    border: none;
+    float: none;
+    margin-left: 200px;
+}
+
+input[type=submit] {
+    float: left;
+    width: 90px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(58, 201, 58);
+    color: #FFF;
+    font-weight: bolder;
+    box-shadow: 3px 3px 4px rgba(10, 10, 10, 0.7);
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(26, 124, 26);
+}
+
+input[type=reset] {
+    float: left;
+    width: 90px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(201, 122, 58);
+    color: #FFF;
+    font-weight: bolder;
+    box-shadow: 3px 3px 4px rgba(10, 10, 10, 0.7);
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: rgb(161, 90, 31);
+}
+
+/* Fim Estilo do Formulário -------------------- */
+
+section {
+    float: left;
+    width: 355px;
+    height: 300px;
+    border: 1px dotted #000;
+    background-color: #FFF;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+section h2 {
+    text-align: center;
+    padding-top: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 1px rgba(10, 10, 10, 0.7);
+}
+
+section p {
+    text-align: justify;
+    padding: 8px; /* espaçamento interno */
+    text-indent: 30px;
+    /* text-transform: uppercase; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    color:#333;
+    line-height: 18px;
+    /* letter-spacing: 1px; */
+    /* word-spacing: 5px; */
+    /* font-style: italic; */
+    /* overflow-y: scroll; */
+}
+
+#img {
+    float: right;
+    width: 740px;
+    height: 263px;
+    border: 1px solid #000;
+    background-color: #FFF;
+    background-image: url(img/css.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 740px 263px;
+}
+
+footer {
+    width: 960px;
+    height: 60px;
+    border: 2px solid #000;
+    background-color: #c3f59d;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(10, 10, 10, 0.7);
+}

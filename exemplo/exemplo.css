@@ -1,0 +1,16 @@
+body {
+    background-color: #97c6ef;
+}
+
+#titulo {
+    color:#0F0;
+    font-style: italic;
+    text-align: center;
+}
+
+.texto {
+    font-weight: bolder;
+    color: #FF0099;
+    text-decoration: line-through;
+    font-size: xx-large;
+}
